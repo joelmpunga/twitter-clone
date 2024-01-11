@@ -237,12 +237,12 @@ export default function Wrapper() {
         }
     
     ]
+    console.log("total tweets",tweets.length);
   return (
     <div className='w-1/2 mx-auto h-1/1 mt-0'>
       <Entete/>
       <NewTweeter/>
-      {/* {tweets.map((tweet))=>} */}
-      <OneTweet/>
+      {tweets.map((tweet)=>(<OneTweet key={tweet.id} tweet={tweet}/>))}
     </div>
   )
 }
