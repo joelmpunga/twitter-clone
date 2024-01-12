@@ -12,7 +12,7 @@ export default function OneTweet({tweet}) {
             <div className='flex-1'>
                 <HeaderOneTweet pseudo={tweet.source} tag={"@"+tweet.source} date={(format(new Date(tweet.date),'EEEE dd MM yyyy'))} tweet={tweet}/>
                 <MessageOneTweet image={tweet.image} message={tweet.text} />
-                <ReactTweetIcon icone="src/assets/Media.svg" tweet={tweet}/>
+                <ReactTweetIcon tweet={tweet}/>
             </div>
         </div>
     )
