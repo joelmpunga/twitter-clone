@@ -1,5 +1,6 @@
 import React from 'react'
 import IconHeaderOneTweet from '../ui/IconHeaderOneTweet'
+import formatDate from '../functions/formatDate'
 
 export default function HeaderOneTweet({pseudo,tag,date,tweet}) {
   return (
@@ -10,7 +11,7 @@ export default function HeaderOneTweet({pseudo,tag,date,tweet}) {
 
       }
       <h2 className='text-gray-500'>{tag}</h2>
-      <h2 className='text-gray-500'>{date}</h2>
+      <h2 className='text-gray-500'>{formatDate(date)}</h2>
     </div>
   )
 }
