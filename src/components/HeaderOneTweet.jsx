@@ -1,17 +1,18 @@
 import React from 'react'
 import IconHeaderOneTweet from '../ui/IconHeaderOneTweet'
 import formatDate from '../functions/formatDate'
+import Title from '../ui/Title'
 
-export default function HeaderOneTweet({pseudo,tag,date,tweet}) {
+export default function HeaderOneTweet({ pseudo, tag, date, tweet }) {
   return (
     <div className='flex gap-1 align-text-bottom'>
-      <h2 className='text-white font-bold'>{pseudo}</h2>
+      <Title classe="text-white font-bold" content={pseudo} />
       {
-        tweet.isVerified&&<IconHeaderOneTweet icone="src/assets/Verified.svg"/>
+        tweet.isVerified && <IconHeaderOneTweet icone="src/assets/Verified.svg" />
 
       }
-      <h2 className='text-gray-500'>{tag}</h2>
-      <h2 className='text-gray-500'>{formatDate(date)}</h2>
-    </div>
+      <Title classe='text-gray-500' content={tag} />
+      <Title classe='text-gray-500' content={formatDate(date)} />
+    </div >
   )
 }

@@ -1,7 +1,5 @@
-export default function ButtonArrounded({texte,color}) {
+export default function ButtonArrounded({texte,color,taille}) {
     return (
-      <div className="bg-blue-300 rounded-full">
-        <button className={" h-7 w-20 "+color}>{texte}</button>
-      </div>
+        <button className={taille+" "+color+" rounded-full text-center justify-start"}>{texte}</button>
     )
   }

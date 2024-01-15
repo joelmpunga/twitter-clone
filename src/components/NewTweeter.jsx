@@ -19,7 +19,7 @@ export default function NewTweeter() {
                                 <IconNewTweet icone="src/assets/Emoji.svg" />
                                 <IconNewTweet icone="src/assets/Schedule.svg" />
                             </div>
-                            <ButtonArrounded texte="Tweet" color="text-white" className="w-1" />
+                            <ButtonArrounded texte="Tweet" color="text-white  bg-blue-300" taille=" h-7 w-20" />
                         </div>
                     </div>
                 </div>

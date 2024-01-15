@@ -5,7 +5,7 @@ import '../App.css'
 export default function MessageOneTweet({ message, image }) {
     return (
         <div className='py-2 flex flex-col gap-2'>
-            <p className='text-white text-left'>
+            <p className='text-white text-left flex-wrap'>
                 <Linkify>{message}</Linkify>
             </p>
             {
