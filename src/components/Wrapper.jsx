@@ -12,7 +12,7 @@ export default function Wrapper() {
     
             "source": "Twitter",
     
-            "date": 1604299903000,
+            "date": 1705312377284,
     
             "favorites": "92746",
     
@@ -34,7 +34,7 @@ export default function Wrapper() {
     
             "source": "Apple",
     
-            "date": 1609942590000,
+            "date": 1704881086543,
     
             "favorites": "396603",
     
@@ -58,7 +58,7 @@ export default function Wrapper() {
     
             "source": "Twitter for iPhone",
     
-            "date": 1604231375000,
+            "date": 1704622198192,
     
             "favorites": "124689",
     
@@ -82,7 +82,7 @@ export default function Wrapper() {
     
             "source": "CNN",
     
-            "date": 1604084613000,
+            "date": 1704017445657,
     
             "favorites": "44842",
     
@@ -106,7 +106,7 @@ export default function Wrapper() {
     
             "source": "Trump D.",
     
-            "date": 1603037689000,
+            "date": 1702894287673,
     
             "favorites": 62414,
     
@@ -128,7 +128,7 @@ export default function Wrapper() {
     
             "source": "Lauraine L.",
     
-            "date": 1602377246000,
+            "date": 1701684753878,
     
             "favorites": 34952,
     
@@ -152,7 +152,7 @@ export default function Wrapper() {
     
             "source": "Mexico City",
     
-            "date": 1601996447000,
+            "date": 1685960071743,
     
             "favorites": 58201,
     
@@ -160,7 +160,7 @@ export default function Wrapper() {
     
             "isVerified": true,
     
-            "replies": "0",
+            "replies": 0,
     
             "retweets": 14359,
     
@@ -174,7 +174,7 @@ export default function Wrapper() {
     
             "source": "New York Times",
     
-            "date": 1554075712000,
+            "date": 1671445003685,
     
             "favorites": 58201,
     
@@ -182,7 +182,7 @@ export default function Wrapper() {
     
             "isVerified": true,
     
-            "replies": "0",
+            "replies": 0,
     
             "retweets": 14359,
     
@@ -204,7 +204,7 @@ export default function Wrapper() {
     
             "isVerified": true,
     
-            "replies": "0",
+            "replies": 0,
     
             "retweets": 14359,
     
@@ -218,7 +218,7 @@ export default function Wrapper() {
     
             "source": "Samsung",
     
-            "date": 1601996447000,
+            "date": 1221475610540,
     
             "favorites": 58201,
     
@@ -226,7 +226,7 @@ export default function Wrapper() {
     
             "isVerified": true,
     
-            "replies": "0",
+            "replies": 0,
     
             "retweets": 14359,
     

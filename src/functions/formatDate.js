@@ -8,7 +8,7 @@ export default function formatDate(value) {
     }
     else if (nbreDays <= 7) {
         //one week afficher les jours
-        return Math.round(nbreDays) + "d"
+        return Math.round(nbreDays) + "j"
     }
     else if (nbreDays <= 30) {
         //one month afficher les semaines
@@ -16,15 +16,15 @@ export default function formatDate(value) {
     }
     else if (nbreDays <= 182) {
         //half-year affiche les mois
-        return Math.round(nbreDays / 30) + "m"
+        return Math.round(nbreDays / 30) + "mois"
     }
     else if (nbreDays <= 365) {
         //one year on affiche la date
         return time.getFullYear()+"-"+time.getMonth()+"-"+time.getDay();
     }
-    else {
+    else if (nbreDays > 365) {
         //many year on affiche les annees
-        return Math.round(nbreDays / 365) + "a"
+        return Math.round(nbreDays / 365) + "ans"
     }
 }
 function ecartDate(value) {
@@ -34,4 +34,4 @@ function ecartDate(value) {
 function convertInDay(valueMilliSec) {
     return Math.round(valueMilliSec / 86400000);
 }
-console.log(formatDate(1604299903000))
+console.log(new Date()-(86400000*7*4*200))

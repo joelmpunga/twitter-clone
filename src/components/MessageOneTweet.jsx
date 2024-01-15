@@ -1,5 +1,4 @@
 import React from 'react'
-import { linkify} from 'react-linkify'
 import Linkify from 'react-linkify'
 import '../App.css'
 
