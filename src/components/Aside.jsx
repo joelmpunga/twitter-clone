@@ -1,6 +1,8 @@
 import React from 'react'
 import FollowAcount from './FollowAcount'
 import ContainerAside from './ContainerAside'
+import SearchAside from './SearchAside'
+import TrendsAside from './TrendsAside'
 
 export default function Aside() {
     let tweets = [
@@ -77,10 +79,12 @@ export default function Aside() {
     return (
         <div className='flex gap-0 w-1/3 mx-auto justify-start'>
             <div className='flex gap-0 justify-start w-1/2 flex-col'>
-                <ContainerAside src="src/assets/Gif.svg">
-                    {
-                        tweets.map((tweet) => (<FollowAcount key={tweet.id} pseudo={tweet.source} tag={tweet.source} tweet={tweet} />))
-                    }
+                <SearchAside/>
+                <ContainerAside src="src/assets/Settings.svg">
+                    <TrendsAside/>
+                    <TrendsAside/>
+                    <TrendsAside/>
+                    <TrendsAside/>
                 </ContainerAside>
                 <ContainerAside>
                     {

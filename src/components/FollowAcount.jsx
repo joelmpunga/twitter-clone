@@ -8,7 +8,7 @@ export default function FollowAcount({ pseudo, tag, tweet }) {
     return (
         <div className='flex gap-1 justify-start w-5/5 my-auto'>
             <ImageSmallArrounded src={tweet.author_avatar} />
-            <div className='flex gap-1 flex-col w-3/5 my-0'>
+            <div className='flex gap-1 flex-col w-3/5 my-0 text-base/6'>
                 <div className='flex gap-0 justify-start'>
                     <Title classe="text-white" content={pseudo} />
                     {
