@@ -4,12 +4,14 @@ import Menu from './Menu'
 import ContainerAside from './ContainerAside'
 import FollowAcount from './FollowAcount'
 import Aside from './Aside'
-export default function Root() {
+export default function Root({children}) {
   return (
     <div className='flex'>
       <Menu />
-      <Wrapper />
-      <Aside/>
+      {
+        children
+      }
+      <Aside />
     </div>
   )
 }

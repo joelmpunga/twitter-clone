@@ -1,7 +1,7 @@
 import React from 'react'
 
-export default function ImageSmallArrounded({src}) {
+export default function ImageSmallArrounded({src,classe}) {
   return (
-    <img className='w-10 h-10 rounded-full align-top' src={src} alt="profil" />
+    <img className={classe+' rounded-full align-top'} src={src} alt="profil" />
   )
 }
