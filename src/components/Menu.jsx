@@ -23,7 +23,7 @@ export default function Menu() {
                     <ImageSmallArrounded src="src/assets/Profile-Photo.svg" classe="h-30 w-30" />
                     <div>
                         <Title content="Joel MPUNGA" classe="text-white font-bold"/>
-                        <Title content="@JoelMPUNGA56789" classe="text-white font-bold"/>                        
+                        <Title content="@JoelMPUNGA56789" classe="text-gray-600"/>                        
                     </div>
                     <IconNewTweet icone="src/assets/More-2.svg"/>
                 </div>
