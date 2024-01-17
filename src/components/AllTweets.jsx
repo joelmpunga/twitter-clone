@@ -236,9 +236,9 @@ export default function AllTweets() {
     
     ]
     return (
-        <div>{
+        <>{
             tweets.map((tweet) => (<OneTweet key={tweet.id} tweet={tweet} />))
             }
-        </div>
+        </>
     )
 }
