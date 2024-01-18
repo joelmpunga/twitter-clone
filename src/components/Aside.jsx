@@ -79,18 +79,20 @@ export default function Aside() {
     return (
         <div className='flex gap-0 w-1/3 mx-auto justify-start'>
             <div className='flex gap-0 justify-start w-1/2 flex-col'>
-                <SearchAside/>
-                <ContainerAside src="src/assets/Settings.svg">
-                    <TrendsAside/>
-                    <TrendsAside/>
-                    <TrendsAside/>
-                    <TrendsAside/>
-                </ContainerAside>
-                <ContainerAside>
-                    {
-                        tweets.map((tweet) => (<FollowAcount key={tweet.id} pseudo={tweet.source} tag={tweet.source} tweet={tweet} />))
-                    }
-                </ContainerAside>
+                <div className='fixed'>
+                    <SearchAside />
+                    <ContainerAside src="src/assets/Settings.svg">
+                        <TrendsAside />
+                        <TrendsAside />
+                        <TrendsAside />
+                        <TrendsAside />
+                    </ContainerAside>
+                    <ContainerAside>
+                        {
+                            tweets.map((tweet) => (<FollowAcount key={tweet.id} pseudo={tweet.source} tag={tweet.source} tweet={tweet} />))
+                        }
+                    </ContainerAside>
+                </div>
             </div>
         </div>
     )
