@@ -1,6 +1,7 @@
 import React, { Children } from 'react'
 import Title from '../ui/Title'
 import IconNewTweet from '../ui/IconNewTweet'
+import ShowMore from '../ui/ShowMore'
 
 export default function ContainerAside({ children, src }) {
     return (
@@ -14,9 +15,7 @@ export default function ContainerAside({ children, src }) {
             {
                 children
             }
-            <div>
-                <h3 className='text-blue-500'>Show more</h3>
-            </div>
+            <ShowMore/>
         </div>
     )
 }

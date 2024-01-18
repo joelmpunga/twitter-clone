@@ -10,7 +10,7 @@ export default function NewTweeter() {
                 <ImageSmallArrounded classe = "w-10 h-10" src="src/assets/Profile-Photo.svg" />
                 <div className='flex-1'>
                     <div className='flex flex-col gap-1'>
-                        <textarea className='bg-black text-white resize-none' placeholder="What's happening?"></textarea>
+                        <textarea className='bg-black text-white resize-none outline-none' placeholder="What's happening?"></textarea>
                         <div className='flex justify-between'>
                             <div className='flex gap-2 justify-start'>
                                 <IconNewTweet icone="src/assets/Media.svg" />

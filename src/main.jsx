@@ -17,7 +17,8 @@ const router = createBrowserRouter([
     children: [
       {
         path: "/",
-        element: <><NewTweeter /><AllTweets /></>
+        element: <><NewTweeter /><AllTweets /></>,
+        errorElement:<><NewTweeter /><AllTweets /></>,
       },
       {
         path: "/profil",

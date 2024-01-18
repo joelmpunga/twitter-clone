@@ -5,7 +5,7 @@ import SearchAside from './SearchAside'
 import TrendsAside from './TrendsAside'
 
 export default function Aside() {
-    let tweets = [
+    let accounts = [
 
         {
 
@@ -89,7 +89,7 @@ export default function Aside() {
                     </ContainerAside>
                     <ContainerAside>
                         {
-                            tweets.map((tweet) => (<FollowAcount key={tweet.id} pseudo={tweet.source} tag={tweet.source} tweet={tweet} />))
+                            accounts.map((tweet) => (<FollowAcount key={tweet.id} pseudo={tweet.source} tag={tweet.source} tweet={tweet} />))
                         }
                     </ContainerAside>
                 </div>
