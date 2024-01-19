@@ -6,7 +6,7 @@ import ImageSmallArrounded from '../ui/ImageSmallArrounded'
 export default function NewTweeter() {
     return (
         <>
-            <div className='flex flex-wrap gap-2 border border-gray-500 p-2'>
+            <div className='flex flex-wrap gap-2 border border-gray-700 p-2'>
                 <ImageSmallArrounded classe = "w-10 h-10" src="src/assets/Profile-Photo.svg" />
                 <div className='flex-1'>
                     <div className='flex flex-col gap-1'>

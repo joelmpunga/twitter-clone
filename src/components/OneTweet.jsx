@@ -7,7 +7,7 @@ import {format} from 'date-fns'
 
 export default function OneTweet({tweet}) {
     return (
-        <div className='flex flex-wrap gap border border-gray-500 p-3 space-x-3 w-1/1'>
+        <div className='flex flex-wrap gap border border-gray-700 p-3 space-x-3 w-1/1'>
             <ImageSmallArrounded src={tweet.author_avatar} classe = "w-10 h-10"/>
             <div className='flex-1'>
                 <HeaderOneTweet pseudo={tweet.source} tag={"@"+tweet.source} date={tweet.date} tweet={tweet}/>

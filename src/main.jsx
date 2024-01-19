@@ -9,6 +9,7 @@ import ProfilEntete from './components/ProfilEntete.jsx'
 import Root from './components/Root.jsx'
 import Wrapper from './components/Wrapper.jsx'
 import { createBrowserRouter, Outlet, RouterProvider } from 'react-router-dom'
+import Error404 from './components/Error404.jsx'
 
 const router = createBrowserRouter([
   {
@@ -18,14 +19,20 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <><NewTweeter /><AllTweets /></>,
-        errorElement:<><NewTweeter /><AllTweets /></>,
+        errorElement: <Error404 />,
       },
       {
         path: "/profil",
-        element: <ProfilEntete />
+        element: <ProfilEntete />,
+        errorElement: <Error404 />,
       },
+      {
+        path: '*',
+        element: <Error404 />,
+      }
     ]
-  }]);
+  },
+  ]);
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <RouterProvider router={router} />
