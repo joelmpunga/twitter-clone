@@ -34,7 +34,7 @@ export default function AllTweets() {
     
             "date": 1704881086543,
     
-            "favorites": "396603",
+            "favorites": "3",
     
             "id": "1346822958006886400",
     
