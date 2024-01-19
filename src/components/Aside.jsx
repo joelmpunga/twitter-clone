@@ -81,13 +81,13 @@ export default function Aside() {
             <div className='flex gap-0 justify-start w-1/2 flex-col'>
                 <div className='fixed'>
                     <SearchAside />
-                    <ContainerAside src="src/assets/Settings.svg">
+                    <ContainerAside src="src/assets/Settings.svg" content="Trends of you">
                         <TrendsAside />
                         <TrendsAside />
                         <TrendsAside />
                         <TrendsAside />
                     </ContainerAside>
-                    <ContainerAside>
+                    <ContainerAside content="Who to follow">
                         {
                             accounts.map((tweet) => (<FollowAcount key={tweet.id} pseudo={tweet.source} tag={tweet.source} tweet={tweet} />))
                         }
