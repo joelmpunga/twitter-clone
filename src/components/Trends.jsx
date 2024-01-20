@@ -1,11 +1,11 @@
 import React from 'react'
 import FollowAcount from './FollowAcount'
-import ContainerAside from './ContainerAside'
+import ContainerTrend from './ContainerTrend'
 import SearchAside from './SearchAside'
 import TrendsAside from './TrendsAside'
 import Title from '../ui/Title'
 
-export default function Aside() {
+export default function Trends() {
     let accounts = [
 
         {
@@ -82,17 +82,17 @@ export default function Aside() {
             <div className='flex gap-0 justify-start w-1/2 flex-col'>
                 <div className='fixed'>
                     <SearchAside />
-                    <ContainerAside src="src/assets/Settings.svg" content="Trends of you">
+                    <ContainerTrend src="src/assets/Settings.svg" content="Trends of you">
                         <TrendsAside />
                         <TrendsAside />
                         <TrendsAside />
                         <TrendsAside />
-                    </ContainerAside>
-                    <ContainerAside content="Who to follow">
+                    </ContainerTrend>
+                    <ContainerTrend content="Who to follow">
                         {
                             accounts.map((tweet) => (<FollowAcount key={tweet.id} pseudo={tweet.source} tag={tweet.source} tweet={tweet} />))
                         }
-                    </ContainerAside>
+                    </ContainerTrend>
                     <Title />
                     <div className='text-center'>
                         <small className="text-gray-500 text-6">Terms of Service Privacy Policy Cookie Policy</small>

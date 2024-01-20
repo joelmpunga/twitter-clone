@@ -1,17 +1,17 @@
 import React from 'react'
 import Wrapper from './Wrapper'
-import Menu from './Menu'
-import ContainerAside from './ContainerAside'
+import SideBare from './SideBare'
+import ContainerTrend from './ContainerTrend'
 import FollowAcount from './FollowAcount'
-import Aside from './Aside'
+import Trends from './Trends'
 export default function Root({children}) {
   return (
     <div className='flex'>
-      <Menu />
+      <SideBare />
       {
         children
       }
-      <Aside />
+      <Trends />
     </div>
   )
 }
