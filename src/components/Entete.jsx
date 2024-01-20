@@ -2,7 +2,7 @@ import React from 'react'
 import { Link, useLocation } from 'react-router-dom'
 
 export default function Entete() {
-    let location = useLocation()
+    const location = useLocation()
     return (
         <div className='flex justify-between border border-gray-700 p-3'>
             <Link to="/">

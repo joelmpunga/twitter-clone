@@ -80,7 +80,7 @@ export default function Trends() {
     return (
         <div className='flex gap-0 w-1/3 mx-auto justify-start'>
             <div className='flex gap-0 justify-start w-1/2 flex-col'>
-                <div className='sticky flex flex-col -top-80'>
+                <div className='sticky flex flex-col -top-60'>
                     <SearchAside />
                     <ContainerTrend src="src/assets/Settings.svg" content="Trends of you">
                         <TrendsAside />
