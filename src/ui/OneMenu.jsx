@@ -2,7 +2,7 @@ import React from 'react'
 import {Link} from 'react-router-dom'
 
 
-export default function IconMenu({ onglet, icone, route }) {
+export default function OneMenu({ onglet, icone, route }) {
     return (
         <div className='flex align-top h-14 py-6 px-1 justify-start hover:bg-gray-900 hover:rounded-2xl hover:w-2/3'>
             <Link to={route}>

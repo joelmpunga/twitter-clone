@@ -1,5 +1,5 @@
 import React from 'react'
-import Wrapper from './Wrapper'
+import Timeline from './Timeline'
 import SideBare from './SideBare'
 import ContainerTrend from './ContainerTrend'
 import FollowAcount from './FollowAcount'

@@ -7,7 +7,7 @@ import ProfilEntete from './ProfilEntete'
 
 
 
-export default function Wrapper({children}) {
+export default function Timeline({children}) {
     return (
         <div className='w-1/3 mx-auto h-full'>
             <Entete />
