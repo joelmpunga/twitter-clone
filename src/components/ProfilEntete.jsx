@@ -6,6 +6,7 @@ import { Link } from 'react-router-dom'
 import ProfilNbreFollow from '../ui/ProfilNbreFollow'
 import ProfilDateJoin from './ProfilDateJoin'
 import ProfilOnglets from './ProfilOnglets'
+import Linkify from 'react-linkify'
 
 export default function ProfilEntete() {
     return (
@@ -19,9 +20,9 @@ export default function ProfilEntete() {
                 <NameAccount />
             </div>
             <div className='mt-3 flex gap-2 flex-col p-3'>
-                <p className='text-white'>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                Minima officiis aspernatur ut quas amet autem veritatis laudantium molestias at expedita 
-                molestiae perspiciatis nisi consequatur eos ratione repellendus sapiente, est ab.</p>
+                <p className='text-white'><Linkify>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Minima officiis aspernatur ut quas amet autem veritatis https://github.com/joelmpunga laudantium molestias at expedita 
+                molestiae perspiciatis nisi consequatur eos ratione repellendus sapiente, est ab.</Linkify></p>
                 <Link to="/profil" className='text-blue-600 hover:underline'>Translate bio</Link>
             </div>
             <ProfilDateJoin icone="src/assets/Schedule.svg" texte="Joined Octobre 2021"/>
