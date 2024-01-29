@@ -9,7 +9,7 @@ export default function MessageOneTweet({ message, image }) {
                 <Linkify>{message}</Linkify>
             </p>
             {
-                image && <img src={image} alt="image du tweet" className='object-cover max-w-1/1 rounded-2xl max-h-60' />
+                image && <img src={image} alt="image du tweet" className='object-cover max-w-1/1 rounded-2xl max-h-80' />
             }
         </div>
     )

@@ -5,14 +5,14 @@ import HeaderOneTweet from './HeaderOneTweet'
 import MessageOneTweet from './MessageOneTweet'
 import {format} from 'date-fns'
 
-export default function OneTweet({tweet}) {
+export default function OneTweet({posts,users,comments}) {
     return (
         <div className='flex flex-wrap gap border border-gray-700 p-3 space-x-3 w-1/1'>
-            <ImageSmallArrounded src={tweet.author_avatar} classe = "w-10 h-10"/>
+            <ImageSmallArrounded src={posts.thumbnailUrl} classe = "w-10 h-10"/>
             <div className='flex-1'>
-                <HeaderOneTweet pseudo={tweet.source} tag={"@"+tweet.source} date={tweet.date} tweet={tweet}/>
-                <MessageOneTweet image={tweet.image} message={tweet.text} />
-                <ReactTweetIcon tweet={tweet}/>
+                <HeaderOneTweet pseudo={users.name} tag={"@"+users.name} date={posts.date} tweet={posts}/>
+                <MessageOneTweet image={posts.thumbnailUrl} message={posts.body} />
+                <ReactTweetIcon posts={posts} comments = {comments}/>
             </div>
         </div>
     )

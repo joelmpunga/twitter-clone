@@ -6,6 +6,14 @@ import ImageSmallArrounded from '../ui/ImageSmallArrounded'
 export default function NewTweeter() {
     const [hasContent, setHasContent] = useState(false)
     const [buttonBackGr, setButtonBackGr] = useState("bg-blue-300")
+    const accountOwner = {
+        'userId': 6,
+        'id': 6,
+        'title': "dolorem eum magni eos aperiam quia",
+        'body': "ut aspernatur corporis harum nihil quis provident sequi\nmollitia nobis aliquid molestiae\nperspiciatis et ea nemo ab reprehenderit accusantium quas\nvoluptate dolores velit et doloremque molestiae",
+        'like': 10,
+        'repost': 0,
+    }
     const handleChange = (e) => {
         if (e.target.value == "") {
             setHasContent(false)

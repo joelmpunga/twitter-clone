@@ -34,4 +34,3 @@ function ecartDate(value) {
 function convertInDay(valueMilliSec) {
     return Math.round(valueMilliSec / 86400000);
 }
-console.log(new Date()-(86400000*7*4*200))
