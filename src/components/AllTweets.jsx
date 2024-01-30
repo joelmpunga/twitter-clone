@@ -259,10 +259,9 @@ export default function AllTweets() {
     //     }
 
     // ]
-    console.table(comments);
     return (
         <>{
-            posts.map((post) => (<OneTweet key={post.id} posts={post} users={users.find((users) => users.id == post.userId)} comments={comments.find((comments) => comments.postId == post.id)}/>))
+            posts.map((post) => (<OneTweet key={post.id} posts={post} users={users.find((users) => users.id == post.userId)} comments={comments.filter((comments) => comments.postId == post.id)} />))
         }
         </>
     )

@@ -8,6 +8,7 @@ import Root from './components/Root.jsx'
 import { createBrowserRouter, Outlet, RouterProvider } from 'react-router-dom'
 import Error404 from './components/Error404.jsx'
 import Timeline from './components/Timeline.jsx'
+import ModifierProfil from './components/ModifierProfil.jsx'
 
 const router = createBrowserRouter([
   {
@@ -22,6 +23,11 @@ const router = createBrowserRouter([
       {
         path: "/profil",
         element: <ProfilEntete />,
+        errorElement: <Error404 />,
+      },
+      {
+        path: "/profil/edit/:id",
+        element: <ModifierProfil/>,
         errorElement: <Error404 />,
       },
       {

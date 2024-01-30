@@ -1,3 +1,4 @@
-export default function tailleTableau(tableau){
-    return tableau.length?tableau.length:0;
+export default function tailleTableau(comments) {
+    let number = comments.reduce((previousValue,currentValue)=>{currentValue++});
+    return number;
 }

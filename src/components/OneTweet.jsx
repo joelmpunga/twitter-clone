@@ -4,7 +4,8 @@ import ImageSmallArrounded from '../ui/ImageSmallArrounded'
 import HeaderOneTweet from './HeaderOneTweet'
 import MessageOneTweet from './MessageOneTweet'
 import {format} from 'date-fns'
-
+import { createRoutesFromElements } from 'react-router-dom'
+import tailleTableau from '../functions/tailleTableau'
 export default function OneTweet({posts,users,comments}) {
     return (
         <div className='flex flex-wrap gap border border-gray-700 p-3 space-x-3 w-1/1'>
