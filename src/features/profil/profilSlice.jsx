@@ -1,12 +1,13 @@
 import { createSlice } from '@reduxjs/toolkit'
 
 const accountOwner = {
-    'userId': 6,
-    'id': 6,
-    'title': "dolorem eum magni eos aperiam quia",
-    'body': "the texte",
-    'like': 0,
-    'repost': 0,
+  "id": 6,
+  "name": "Mpunga Ilunga",
+  "username": "joelmpunga",
+  "email": "joel@gmail.com",
+  "profil": "https://pbs.twimg.com/profile_images/1136589142035521536/6Y2g5se__400x400.png",
+  "thumbnailProfil": "https://pbs.twimg.com/profile_images/1136589142035521536/6Y2g5se__400x400.png",
+  "Joined": "Joined October 2022"
 }
 
 export const profilSlice = createSlice({
@@ -15,19 +16,17 @@ export const profilSlice = createSlice({
     value: accountOwner,
   },
   reducers: {
-    modify: (state) => {
-      state.value += 1
+    modifyName: (state) => {
+      state.value.name = "New Account"
     },
-    decrement: (state) => {
-      state.value -= 1
+    modifyUserName: (state) => {
+      state.value +="modified"
     },
-    incrementByAmount: (state, action) => {
-      state.value += action.payload
+    modifyEmail: (state) => {
+      state.value +="modified"
     },
   },
 })
-
-// Action creators are generated for each case reducer function
-export const { modify, decrement, incrementByAmount } = profilSlice.actions
+export const { modifyName, modifyEmail, modifyUserName } = profilSlice.actions
 
 export default profilSlice.reducer

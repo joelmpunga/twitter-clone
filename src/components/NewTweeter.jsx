@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import IconNewTweet from '../ui/IconNewTweet'
 import ButtonArrounded from '../ui/ButtonArrounded'
 import ImageSmallArrounded from '../ui/ImageSmallArrounded'
+import { Link } from 'react-router-dom'
 
 export default function NewTweeter() {
     const [hasContent, setHasContent] = useState(false)
@@ -18,7 +19,9 @@ export default function NewTweeter() {
     return (
         <>
             <div className='flex flex-wrap gap-2 border border-gray-700 p-2'>
-                <ImageSmallArrounded classe="w-10 h-10" src="src/assets/Profile-Photo.svg" />
+                <Link to='/profil'>
+                    <ImageSmallArrounded classe="w-10 h-10" src="src/assets/Profile-Photo.svg" />
+                </Link>
                 <div className='flex-1'>
                     <div className='flex flex-col gap-1'>
                         <textarea className='bg-black text-white resize-none outline-none' placeholder="What's happening?" onChange={(e) => (handleChange(e))}></textarea>

@@ -6,7 +6,7 @@ import Title from '../ui/Title'
 import IconNewTweet from '../ui/IconNewTweet'
 import NameAccount from './NameAccount'
 
-export default function SideBare() {
+export default function SideBare({user}) {
     return (
         <div className='flex justify-end gap-0 w-1/3'>
             <div className='flex gap-0 justify-start w-1/2 flex-col'>
@@ -25,7 +25,7 @@ export default function SideBare() {
                     </div>
                     <div className='flex align-bottom gap-4'>
                         <ImageSmallArrounded src="src/assets/Profile-Photo.svg" classe="h-30 w-30" />
-                        <NameAccount />
+                        <NameAccount user = {user}/>
                         <IconNewTweet icone="src/assets/More-2.svg" />
                     </div>
                 </div>
