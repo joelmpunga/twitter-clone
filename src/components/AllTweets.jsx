@@ -3,22 +3,14 @@ import axios from 'axios'
 import { useState, useEffect } from 'react'
 export default function AllTweets() {
     const [posts, setPosts] = useState([])
-    const [users, setUsers] = useState([])
     const [comments, setComments] = useState([])
-
+    
     useEffect(() => {
         axios.get(`https://my-json-server.typicode.com/amare53/twiterdb/posts`)
             .then(res => {
                 setPosts(res.data);
             })
     }, ['posts'])
-
-    useEffect(() => {
-        axios.get(`https://my-json-server.typicode.com/amare53/twiterdb/users`)
-            .then(res => {
-                setUsers(res.data);
-            })
-    }, ['users'])
 
     useEffect(() => {
         axios.get(`https://my-json-server.typicode.com/amare53/twiterdb/comments`)
@@ -261,7 +253,7 @@ export default function AllTweets() {
     // ]
     return (
         <>{
-            posts.map((post) => (<OneTweet key={post.id} posts={post} users={users.find((users) => users.id == post.userId)} comments={comments.filter((comments) => comments.postId == post.id)} />))
+            posts.map((post) => (<OneTweet key={post.id} posts={post} comments={comments.filter((comments) => comments.postId == post.id)} />))
         }
         </>
     )
