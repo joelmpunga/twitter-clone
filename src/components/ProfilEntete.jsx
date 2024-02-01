@@ -61,7 +61,7 @@ export default function ProfilEntete() {
                 ownerPosts.map((post) => (<OneTweet key={post.id} posts={post} comments={comments.filter((comments) => comments.postId == post.id)} />))
             }
             <div>
-                <ProfilOnglets />
+                <ProfilOnglets user = {user}/>
             </div>
         </div>
     )

@@ -4,7 +4,7 @@ import Title from '../ui/Title'
 import FollowAcount from './FollowAcount'
 import ShowMore from '../ui/ShowMore'
 
-export default function ProfilOnglets() {
+export default function ProfilOnglets({user}) {
     let accounts = [
 
         {

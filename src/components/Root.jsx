@@ -19,7 +19,7 @@ export default function Root({children}) {
       {
         children
       }
-      <Trends />
+      <Trends user={user}/>
     </div>
   )
 }
