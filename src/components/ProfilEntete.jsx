@@ -33,7 +33,7 @@ export default function ProfilEntete() {
                 setComments(res.data);
             })
     }, ['comments'])
-    const ownerPosts=posts.filter((posts) => posts.userId == user.id)
+    const ownerPosts = posts.filter((posts) => posts.userId == user.id)
     return (
         <div className='border border-gray-600'>
             <img src={user.profil} alt="" className='w-full h-60' />

@@ -1,24 +1,30 @@
 import { createSlice } from '@reduxjs/toolkit'
-import { useState,useContext,useCallback } from 'react'
-import axios from 'axios'
 
-const [user, setUser] = useState([])
-useEffect(() => {
-  axios.get(`https://my-json-server.typicode.com/amare53/twiterdb/users/2`)
-    .then(res => {
-      setUser(res.data);
-    })
-}, ['user'])
+const accountOwner = {
+  "id": 6,
+  "name": "Mpunga Ilunga",
+  "username": "joelmpunga",
+  "email": "joel@gmail.com",
+  "profil": "https://pbs.twimg.com/profile_images/1136589142035521536/6Y2g5se__400x400.png",
+  "thumbnailProfil": "https://pbs.twimg.com/profile_images/1136589142035521536/6Y2g5se__400x400.png",
+  "Joined": "Joined October 2022"
+}
 
 export const profilSlice = createSlice({
   name: 'profil',
   initialState: {
-    value: user,
+    value: accountOwner,
   },
   reducers: {
-    modify: (state) => {
-      state.value = "New Account"
-    }
+    modifyName: (state) => {
+      state.value.name = "New"
+    },
+    modifyUserName: (state) => {
+      state.value +="modified"
+    },
+    modifyEmail: (state) => {
+      state.value +="modified"
+    },
   },
 })
 export const { modifyName, modifyEmail, modifyUserName } = profilSlice.actions
