@@ -1,5 +1,4 @@
 import { Link, useLocation } from 'react-router-dom'
-import ButtonArrounded from '../ui/ButtonArrounded'
 
 export default function Entete() {
     const location = useLocation()

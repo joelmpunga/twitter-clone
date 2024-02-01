@@ -24,7 +24,7 @@ export default function SideBare({user}) {
                         <ButtonArrounded texte="Tweet" color="text-white bg-blue-500 my-4" taille="h-10 w-40" />
                     </div>
                     <div className='flex align-bottom gap-4'>
-                        <ImageSmallArrounded src="src/assets/Profile-Photo.svg" classe="h-30 w-30" />
+                        <ImageSmallArrounded src={user.profil} classe="h-10 w-10" />
                         <NameAccount user = {user}/>
                         <IconNewTweet icone="src/assets/More-2.svg" />
                     </div>
