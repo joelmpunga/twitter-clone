@@ -1,12 +1,20 @@
-import React, { useState } from 'react'
+import React, { useState,useEffect } from 'react'
 import IconNewTweet from '../ui/IconNewTweet'
 import ButtonArrounded from '../ui/ButtonArrounded'
 import ImageSmallArrounded from '../ui/ImageSmallArrounded'
 import { Link } from 'react-router-dom'
+import axios from 'axios'
 
 export default function NewTweeter() {
     const [hasContent, setHasContent] = useState(false)
     const [buttonBackGr, setButtonBackGr] = useState("bg-blue-300")
+    const [user, setUser] = useState([])
+    useEffect(() => {
+        axios.get(`https://my-json-server.typicode.com/amare53/twiterdb/users/2`)
+            .then(res => {
+                setUser(res.data);
+            })
+    }, ['user'])
     const handleChange = (e) => {
         if (e.target.value == "") {
             setHasContent(false)
@@ -27,7 +35,7 @@ export default function NewTweeter() {
         <>
             <div className='flex flex-wrap gap-2 border border-gray-700 p-2'>
                 <Link to='/profil'>
-                    <ImageSmallArrounded classe="w-10 h-10" src="src/assets/Profile-Photo.svg" />
+                    <ImageSmallArrounded classe="w-10 h-10" src={user.profil} />
                 </Link>
                 <form onSubmit={handleSubmit}>
                     <div className='flex-1'>
