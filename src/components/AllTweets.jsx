@@ -1,10 +1,10 @@
 import OneTweet from './OneTweet'
 import axios from 'axios'
 import { useState, useEffect } from 'react'
+//ce composant s'occupe d'afficher touts les tweets disponibles
 export default function AllTweets() {
     const [posts, setPosts] = useState([])
     const [comments, setComments] = useState([])
-    
     useEffect(() => {
         axios.get(`https://my-json-server.typicode.com/amare53/twiterdb/posts`)
             .then(res => {

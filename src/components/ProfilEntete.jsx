@@ -20,7 +20,7 @@ export default function ProfilEntete() {
             .then(res => {
                 setUser(res.data);
             })
-    }, []), [user]);
+    }, []), ['user']);
     useEffect(() => {
         axios.get(`https://my-json-server.typicode.com/amare53/twiterdb/posts`)
             .then(res => {

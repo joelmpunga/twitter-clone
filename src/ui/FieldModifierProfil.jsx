@@ -4,14 +4,14 @@ export default function FieldModifierProfil({ isTextArea = false,labelText,name,
     const [fieldValue,setFieldValue]=useState(valeur)
     const classField="w-full bg-black text-white outline-none resize-none px-2 py-2"
     const handleChange = (e) =>{
-        const currentValue = e.target.value
-        setFieldValue(currentValue)
+        setFieldValue(e.target.value)
     }
+    console.log(fieldValue);
     return (
         <div className='border border-gray-500 rounded-lg px-2 m-5'>
             <label htmlFor="" className='px-1 py-2 text-gray-400'>{labelText}</label>
             {
-                isTextArea ? <textarea id='' name={name} value={valeur}  className={classField} onChange={handleChange}></textarea> : <input name={name} value={valeur} type="text" className={classField} onChange={handleChange}/>
+                isTextArea ? <textarea id='' name={name} value={fieldValue}  className={classField} onChange={(e) =>{setFieldValue(e.target.value)}}></textarea> : <input name={name} value={fieldValue} type="text" className={classField} onChange={(e) =>{setFieldValue(e.target.value)}}/>
             }
         </div >
     )

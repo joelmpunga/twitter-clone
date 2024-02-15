@@ -1,7 +1,7 @@
 import Title from '../ui/Title'
 import IconNewTweet from '../ui/IconNewTweet'
 import ShowMore from '../ui/ShowMore'
-
+//Ce composant est le cadre sur lequel on place les Trends sur le coté droit
 export default function ContainerTrend({ children, src,content }) {
     return (
         <div className='flex flex-col bg-gray-900 p-2 rounded-lg mx-4 my-2 '>

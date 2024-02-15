@@ -7,18 +7,26 @@ import axios from 'axios'
 
 export default function ModifierProfil() {
     const [user, setUser] = useState([])
-    useEffect(() => {
+    const handleCallback = useCallback((useEffect(() => {
         axios.get(`https://my-json-server.typicode.com/amare53/twiterdb/users/2`)
             .then(res => {
                 setUser(res.data);
             })
-    }, ['user'])
+    }, ['user'])),['user'])
+    
+    console.log(user);
     const handleSubmit = (e) => {
         e.preventDefault()
         const form = e.target
         let data = new FormData(form)
         let objectUser = Object.fromEntries(data)
-        setUser(objectUser)
+        console.log(objectUser)
+        setUser({
+            ...user,
+            name:objectUser.name,
+            username:objectUser.username,
+            email:objectUser.email,
+        })
     }
     return (
         <div className='border border-gray-600 text-white' >

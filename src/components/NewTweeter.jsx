@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import { useState, useEffect } from 'react'
 import IconNewTweet from '../ui/IconNewTweet'
 import ButtonArrounded from '../ui/ButtonArrounded'
 import ImageSmallArrounded from '../ui/ImageSmallArrounded'
