@@ -11,8 +11,14 @@ import Timeline from './components/Timeline.jsx'
 import ModifierProfil from './components/ModifierProfil.jsx'
 import store from './app/store'
 import { Provider } from 'react-redux'
+import Login from './components/Login.jsx'
 
 const router = createBrowserRouter([
+  {
+    path: "/login",
+    element: <><Login /></>,
+    errorElement: <Error404 />,
+  },
   {
     path: '/',
     element: <Root><Timeline><Outlet /></Timeline></Root>,

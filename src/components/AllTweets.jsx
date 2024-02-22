@@ -6,18 +6,24 @@ export default function AllTweets() {
     const [posts, setPosts] = useState([])
     const [comments, setComments] = useState([])
     useEffect(() => {
-        axios.get(`https://my-json-server.typicode.com/amare53/twiterdb/posts`)
+        axios.get(`http://localhost:3000/posts`)
             .then(res => {
                 setPosts(res.data);
             })
-    }, ['posts'])
+    }, ['posts']);
+    // useEffect(() => {
+    //     axios.get(`https://my-json-server.typicode.com/amare53/twiterdb/posts`)
+    //         .then(res => {
+    //             setPosts(res.data);
+    //         })
+    // }, ['posts'])
 
-    useEffect(() => {
-        axios.get(`https://my-json-server.typicode.com/amare53/twiterdb/comments`)
-            .then(res => {
-                setComments(res.data);
-            })
-    }, ['comments'])
+    // useEffect(() => {
+    //     axios.get(`https://my-json-server.typicode.com/amare53/twiterdb/comments`)
+    //         .then(res => {
+    //             setComments(res.data);
+    //         })
+    // }, ['comments'])
     // let tweets = [
 
     //     {
@@ -257,4 +263,10 @@ export default function AllTweets() {
         }
         </>
     )
+    // return (
+    //     <>{
+    //         posts.map((post) => (<OneTweet key={post.id} posts={post} comments={comments.filter((comments) => comments.postId == post.id)} />))
+    //     }
+    //     </>
+    // )
 }

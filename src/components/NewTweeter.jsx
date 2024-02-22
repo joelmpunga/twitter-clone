@@ -10,7 +10,7 @@ export default function NewTweeter() {
     const [buttonBackGr, setButtonBackGr] = useState("bg-blue-300")
     const [user, setUser] = useState([])
     useEffect(() => {
-        axios.get(`https://my-json-server.typicode.com/amare53/twiterdb/users/2`)
+        axios.get(`http://localhost:3000/users/`+12)
             .then(res => {
                 setUser(res.data);
             })

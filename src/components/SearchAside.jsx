@@ -1,6 +1,3 @@
-import React from 'react'
-import IconNewTweet from '../ui/IconNewTweet'
-
 export default function SearchAside() {
     const colorBg = 'bg-gray-900'
     return (

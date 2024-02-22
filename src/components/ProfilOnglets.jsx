@@ -8,7 +8,7 @@ import axios from 'axios'
 export default function ProfilOnglets({ user }) {
     const [users, setUsers] = useState([])
     const handleChange = useCallback(useEffect(() => {
-        axios.get(`https://my-json-server.typicode.com/amare53/twiterdb/users`)
+        axios.get(`http://localhost:3000/users`)
             .then(res => {
                 setUsers(res.data);
             })

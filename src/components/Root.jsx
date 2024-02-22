@@ -8,7 +8,7 @@ import axios from 'axios'
 export default function Root({children}) {
   const [user,setUser]=useState([])
   const handleChange = useCallback(useEffect(() => {
-    axios.get(`https://my-json-server.typicode.com/amare53/twiterdb/users/2`)
+    axios.get(`http://localhost:3000/users/`+12)
         .then(res => {
             setUser(res.data);
         })

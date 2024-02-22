@@ -16,13 +16,13 @@ export default function ProfilEntete() {
     const [posts, setPosts] = useState([])
     const [comments, setComments] = useState([])
     const handleChange = useCallback(useEffect(() => {
-        axios.get(`https://my-json-server.typicode.com/amare53/twiterdb/users/2`)
+        axios.get(`http://localhost:3000/users/`+12)
             .then(res => {
                 setUser(res.data);
             })
-    }, []), ['user']);
+    }, ['user']), ['user']);
     useEffect(() => {
-        axios.get(`https://my-json-server.typicode.com/amare53/twiterdb/posts`)
+        axios.get(`http://localhost:3000/posts`)
             .then(res => {
                 setPosts(res.data);
             })
@@ -38,7 +38,7 @@ export default function ProfilEntete() {
         <div className='border border-gray-600'>
             <img src={user.profil} alt="" className='w-full h-60' />
             <div className='-mt-20 mx-4 flex justify-between'>
-                <ImageSmallArrounded src={user.thumbnailProfil} classe="h-40 w-40 border border-black" />
+                <ImageSmallArrounded src={user.profil} classe="h-40 w-40 border border-black" />
                 <Link to='/profil/edit/:id'>
                     <ButtonArrounded texte="Edit profile" color="text-white border border-white hover:bg-gray-800" taille="w-40 h-10 mt-24 border" />
                 </Link>
